@@ -135,14 +135,14 @@ function check(stageNum, idx = "") {
     img5.src = "./img/투명종이.png";
     goNext((stageNum + 1) * 3 + 1 / 2);
   } else if (stageNum === 3 && qnaList[9]["a"][idx]["score"] === 2) {
-    if (Lovescore >= 85) {
+    if (Lovescore >= 90) {
       console.log("stage4");
       img6.src = "./img/부끄리오.png";
       var kkkkkk = document.querySelector(".hogamdo5");
       kkkkkk.innerHTML = `호감도: ${Lovescore}`;
       love.style.display = "none";
       return;
-    } else if (Lovescore < 85) {
+    } else if (Lovescore < 90) {
       stages[3].style.Webkitanimation = "fadeOut 0.5s";
       stages[3].style.animation = "fadeOut 0.5s";
       setTimeout(() => {
@@ -160,7 +160,7 @@ function check(stageNum, idx = "") {
       return;
     }
   } else if (stageNum === 3 && qnaList[9]["a"][idx]["score"] === 0) {
-    if (Lovescore >= 85) {
+    if (Lovescore >= 80) {
       console.log("stage8");
       stages[3].style.Webkitanimation = "fadeOut 0.5s";
       stages[3].style.animation = "fadeOut 0.5s";
@@ -177,7 +177,7 @@ function check(stageNum, idx = "") {
       kkk.innerHTML = `호감도: ${Lovescore}`;
       love.style.display = "none";
       return;
-    } else if (Lovescore < 85) {
+    } else if (Lovescore < 80) {
       console.log("stage4");
       img6.src = "./img/부끄리오.png";
       var kkkkkk = document.querySelector(".hogamdo5");

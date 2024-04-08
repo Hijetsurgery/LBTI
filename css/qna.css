@@ -60,8 +60,8 @@
 
 .ls {
   position: absolute;
-  top: 10%;
-  left: 25%;
+  margin: auto 0;
+  transform: translate(44%);
 }
 
 body { overflow: hidden; }

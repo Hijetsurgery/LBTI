@@ -84,20 +84,20 @@
 
           /* 프로그레스 바의 배경색과 채워진 부분의 색상 */
           progress::-webkit-progress-bar {
-            background-color: #f3f3f3; /* 배경색 */
+            background-color: #f5c18f; /* 배경색 */
           }
 
           progress::-webkit-progress-value {
-            background-color: #000000; /* 채워진 부분의 색상 */
+            background-color: #a47346; /* 채워진 부분의 색상 */
           }
 
           progress::-moz-progress-bar {
-            background-color: #000000; /* 채워진 부분의 색상 (Firefox) */
+            background-color: #a47346; /* 채워진 부분의 색상 (Firefox) */
             transition: width 0.5s ease;
           }
         </style>
         <div>
-          <progress id="progressBar" value="0" max="120"></progress>
+          <progress id="progressBar" value="0" max="60"></progress>
 
           <script>
             function increaseProgress() {
@@ -105,11 +105,12 @@
               let currentValue = progressBar.value;
               let targetValue = currentValue + 10;
 
-              if (targetValue <= 120) {
+              if (targetValue <= 60) {
                 let increment = 0;
                 const step = 10 / 100; // 10을 100등분하여 증가 단위를 설정
 
                 const interval = setInterval(() => {
+                  console.log("asdfasdf");
                   if (increment < 100) {
                     progressBar.value = currentValue + (increment + 1) * step;
                     increment += 1;

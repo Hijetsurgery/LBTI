@@ -1,10 +1,40 @@
-#main{
-  background-color: #f2f2f2;
+#main {
+  background-color: #ffe5cc;
   width: 80%;
   text-align: center;
-  border-radius: 20px;
+  border-radius: 5px;
+  border-color: #a47346;
+  color: #2f1f00;
+  border: 3px solid #2f1f00; /* 테두리 색상 및 두께 */
+  border-radius: 8px; /* 둥근 모서리 */
+  outline: 4px solid transparent; /* 바깥 테두리 */
+  outline-offset: -4px; /* 바깥 테두리를 안으로 당김 */
+  box-shadow: 0 0 0 2px #f5c18f, 4px 4px 0 0 #2f1f00; /* 픽셀 모서리 효과 */
 }
 
-p{
+p {
   font-size: 20px;
+}
+
+/* #f5c18f */
+
+.custom-btn {
+  background-color: #6a5141; /* 배경색 변경 */
+  color: white; /* 텍스트 색상 */
+  padding: 7.5px 15px; /* 패딩 설정 */
+  font-size: 16px; /* 폰트 크기 */
+  border-radius: 0px; /* 둥근 모서리 */
+  border: 2px solid #2f1f00;
+  cursor: pointer; /* 마우스 커서 변경 */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* 애니메이션 효과 */
+}
+
+.custom-btn:hover {
+  background-color: #f5c18f; /* 호버 시 배경색 */
+  transform: scale(1.05); /* 호버 시 크기 확대 */
+}
+
+.custom-btn:active {
+  background-color: #f5c18f; /* 클릭 시 배경색 */
+  transform: scale(0.95); /* 클릭 시 크기 축소 */
 }

@@ -23,10 +23,10 @@ body {
   left: 50%; /* 화면 너비의 50% 위치 */
   transform: translateX(-50%); /* 버튼을 가운데 정렬 */
   padding: 10px 20px;
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #ffe5cc;
+  color: #2f1f00;
   border: none;
-  border-radius: 5px;
+  border-radius: 0%;
   cursor: pointer;
   font-size: 16px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);

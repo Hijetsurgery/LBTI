@@ -2,23 +2,43 @@
   display: none;
 }
 
+/*.qBox {
+  text-align: center;
+  border-radius: 20px;
+  font-size: 24px;
+  width: 100%;
+  background-color: #ffe5cc;
+  color: #2f1f00;
+  border-color: #2f1f00;
+  border-style: groove;
+  padding: 10px;
+}
+*/
+
 .qBox {
   text-align: center;
   border-radius: 20px;
   font-size: 24px;
   width: 100%;
-  border-color: black;
-  border-style: groove;
+  background-color: #ffe5cc;
+  color: #2f1f00;
   padding: 10px;
+  border: 3px solid #2f1f00; /* 테두리 색상 및 두께 */
+  border-radius: 8px; /* 둥근 모서리 */
+  outline: 4px solid transparent; /* 바깥 테두리 */
+  outline-offset: -4px; /* 바깥 테두리를 안으로 당김 */
+  box-shadow: 0 0 0 2px #f5c18f, 4px 4px 0 0 #2f1f00; /* 픽셀 모서리 효과 */
 }
 
 .answerList {
-  background-color: #f2f2f2;
+  background-color: #ffe5cc;
   border-radius: 20px;
   display: block;
   width: 90%;
-  border: 0px;
+  border: 3px solid #2f1f00; /* 테두리 색상 및 두께 */
+  border-color: #2f1f00;
   font-size: 20px;
+  color: #2f1f00;
 }
 
 .answerList:hover,

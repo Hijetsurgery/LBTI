@@ -42,6 +42,7 @@ const weights = {
 };
 
 function calResult() {
+  console.log(answers)
   // 가장 일치하는 카페들 찾기
   let maxValue = Math.max(...excel[6]);
   let maxMatchCount = [];
@@ -150,13 +151,14 @@ function addAnswer(answerText, qIdx, idx) {
             row.match_count += weights[qnaList[qIdx].a[0]];
         }
       });*/
-        for (let i = 0; i < 12; i++) {
-          if (excel[qIdx][i] === qnaList[qIdx].a[idx].type) {
-            excel[6][i] += weights[qIdx];
-            console.log(weights[qIdx]);
-            answers[qIdx] = weights[qIdx];
-          }
+      answers[qIdx] = qnaList[qIdx].a[idx].type;
+
+      for (let i = 0; i < 12; i++) {
+        if (excel[qIdx][i] === qnaList[qIdx].a[idx].type) {
+          excel[6][i] += weights[qIdx];
+          console.log(weights[qIdx]);
         }
+      }
 
         for (let i = 0; i < children.length; i++) {
           children[i].style.display = "none";

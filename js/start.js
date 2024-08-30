@@ -16,19 +16,24 @@ let excel = [
 ];
 
 const shop = [
-  "가온길",
-  "톤즈",
-  "스위트브라운",
-  "위베이브베이크샵",
-  "오프타임",
-  "아이딜",
-  "인하프",
-  "메이브커피숍",
-  "아모르미오",
-  "솔이네커피볶는집",
-  "더코티지",
-  "카페 디피드",
+  ["가온길", "https://naver.me/FEJWo0f8"],
+  ["톤즈", "https://naver.me/F2Y2Bmof"],
+  ["스위트브라운", "https://naver.me/FQ5rvzNw"],
+  ["위베이브베이크샵", "https://naver.me/5vYnlJmQ"],
+  ["오프타임", "https://naver.me/FLKydIfn"],
+  ["아이딜", "https://naver.me/G2UAWHYK"],
+  ["인하프", "https://naver.me/xoL8T8RQ"],
+  ["메이브커피숍", "https://naver.me/5Y1mZpbU"],
+  ["아모르미오", "https://naver.me/xbw7DAai"],
+  ["솔이네커피볶는집", "https://naver.me/FPsLxLgF"],
+  ["더코티지", "https://naver.me/GNBTiBvs"],
+  ["카페 디피드", "https://naver.me/xSnUtFIw"],
 ];
+
+const loc = {
+
+}
+
 let answers = [];
 
 // 가중치 설정
@@ -89,7 +94,7 @@ function calResult() {
 }
 
 function setResult() {
-  let point = shop[calResult()];
+  let point = shop[calResult()][0];
   console.log(point);
   /*const resultName = document.querySelector('.resultname');
   resultName.innerHTML = infoList[point].name;*/
@@ -218,4 +223,8 @@ function increaseProgress() {
       }
     }, 10); // 10ms마다 증가
   }
+}
+
+function goMap() {
+  window.location.href = shop[calResult()][1];
 }

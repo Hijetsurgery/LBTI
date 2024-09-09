@@ -20,8 +20,7 @@ body {
 .fixed-button {
   position: fixed;
   bottom: 20px; /* 화면 하단에서 20px 위로 */
-  left: 50%; /* 화면 너비의 50% 위치 */
-  transform: translateX(-50%); /* 버튼을 가운데 정렬 */
+  left: 20px; /* 화면 오른쪽에서 20px 왼쪽으로 */
   padding: 10px 20px;
   background-color: #ffe5cc;
   color: #2f1f00;
